@@ -11,7 +11,7 @@ public class RestService {
 
 
   @RequestMapping(value = "/holamundo",method = RequestMethod.GET)
-  public HolaMundoDTO holamundo(@RequestParam(value="mensaje", defaultValue="Hola persona perezosa") String saludito) {
+  public HolaMundoDTO holamundo(@RequestParam(value="mensaje", defaultValue="Hola persona perezosa 123") String saludito) {
     return new HolaMundoDTO(saludito);
   }
 }
